@@ -9,6 +9,7 @@ RewriteCond %{REQUEST_FILENAME} .html -f
 RewriteRule ^(.*)$ $1.html
 
 # Si la ruta no es un archivo existente, ni una carpeta
+DirectoryIndex index.php index.html
 # Reescribir al index
 
 RewriteCond %{REQUEST_FILENAME} !-f
